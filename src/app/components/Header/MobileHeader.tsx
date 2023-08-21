@@ -1,6 +1,5 @@
 import Link from "next/link";
-import React, { useState } from "react";
-import { slide as Menu } from "react-burger-menu";
+import React from "react";
 import Hambuguer from "./Hambuguer";
 import Logo from "./Logo";
 
@@ -10,7 +9,7 @@ function MobileHeader() {
       <div className="ml-4 mt-2">
         <Logo />
       </div>
-      <div className="flex-none dropdown ">
+      <div className="flex-none dropdown">
         <label tabIndex={0} className="btn btn-square btn-ghost">
           <Hambuguer />
         </label>
