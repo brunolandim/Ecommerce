@@ -14,7 +14,7 @@ function Header() {
       <MobileHeader />
     </MediaQuery>
     <MediaQuery minWidth={801}>
-      <header className='flex flex-row justify-between font-gotham'>
+      <header className='flex flex-row justify-between font-gotham bg-white'>
         <Bubbles />
         <div className='flex flex-row items-center gap-2 max-w-[1169px] w-full'>
           <Logo />

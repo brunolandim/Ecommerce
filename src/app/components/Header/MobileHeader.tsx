@@ -1,30 +1,37 @@
-import Link from 'next/link'
-import React from 'react'
-import { slide as Menu } from 'react-burger-menu'
-import Hambuguer from './Hambuguer';
-import Logo from './Logo';
+import Link from "next/link";
+import React, { useState } from "react";
+import { slide as Menu } from "react-burger-menu";
+import Hambuguer from "./Hambuguer";
+import Logo from "./Logo";
 
 function MobileHeader() {
-    const showSettings =  (event:any) =>  {
-        event.isOpen;
-      }
   return (
-    <div>
-      <div className='flex flex-row bg-nwYellow-600 justify-between px-4'>
+    <div className="navbar items-center justify-between bg-nwYellow-600">
+      <div className="ml-4 mt-2">
         <Logo />
-        <button onClick={ showSettings } >
-          <Hambuguer />
-        </button>
       </div>
-        <Menu  itemListClassName='flex flex-col gap-5 text-white bg-nwBlue-500 font-bold p-4' right>
-            <Link href='#'>Home</Link>
-            <Link href='#'>Empresa</Link>
-            <Link href='#'>Sobre</Link>
-            <Link href='#'>Localização</Link>
-            <Link className='font-bold bg-nwYellow-600 w-min text-nwBlue-500 p-2 px-6 rounded-xl' href='#'>Contato</Link>
-        </Menu>
+      <div className="flex-none dropdown ">
+        <label tabIndex={0} className="btn btn-square btn-ghost">
+          <Hambuguer />
+        </label>
+        <ul
+          tabIndex={0}
+          className="menu right-0 gap-5 p-4 menu-lg dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box w-52"
+        >
+          <Link href="#">Home</Link>
+          <Link href="#">Empresa</Link>
+          <Link href="#">Sobre</Link>
+          <Link href="#">Localização</Link>
+          <Link
+            className="font-bold bg-nwYellow-600 text-nwBlue-500 p-2 px-10 rounded-xl"
+            href="#"
+          >
+            Contato
+          </Link>
+        </ul>
+      </div>
     </div>
-  )
+  );
 }
 
-export default MobileHeader
+export default MobileHeader;
