@@ -1,0 +1,33 @@
+import { getAllCategories } from '@/app/provider/category.provider';
+import { ICategory } from '@/app/types/ICategory';
+import Image from 'next/image';
+import { useEffect, useState } from 'react'
+
+function Cateogory() {
+  const [categories, setCategories] = useState<ICategory[]>([]);
+  useEffect(() => {
+    const caterorires = getAllCategories()
+    setCategories(caterorires)
+  },[])
+
+  return (
+    <div className=' w-full text-center text-2xl mt-1 relative'>
+      <div className='bg-nwBlue-500 h-60 rounded-md' >
+        <h1 className='font-bold text-white pt-14'>CATEGORIAS</h1>
+      </div>
+      <div className='flex flex-col flex-wrap md:flex-row gap-8  m-auto max-w-5xl'>
+        {categories.map((category) => (
+          <div key={category.id} className='m-auto'>
+            <h1 className='max-w-[10rem] text-nwYellow-600 font-bold text-sm text-center m-auto'>{category.name.toUpperCase()}</h1>
+            <div className='bg-nwYellow-600 w-52 h-52 rounded-3xl object-cover overflow-hidden'>
+              <Image className='m-auto mt-8' src={category.image} alt={category.name} width={category.width}/>
+            </div>
+          </div>
+        ))
+        }
+      </div>
+    </div>
+  )
+}
+
+export default Cateogory
