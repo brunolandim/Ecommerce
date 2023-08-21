@@ -8,11 +8,11 @@ interface IProps {
 
 function CardProducts({products}: IProps) {
   return (
-    <div className='flex flex-col max-w-5xl m-auto text-nwBlue-500'>
-        <div className='bg-nwBlue-500 rounded-lg max-w-5xl mt-10'>
-        <h1 className='text-center text-white font-bold text-lg pt-28'>PRODUTOS EM DESTAQUE</h1>
+    <div className='flex flex-col m-auto text-nwBlue-500'>
+        <div className='backgroundProducts h-[456px] mt-10 lg:ml-10'>
+        <h1 className='text-center mt-72 text-white font-bold text-lg'>PRODUTOS EM DESTAQUE</h1>
         </div>
-        <div className='flex flex-col md:flex-row flex-wrap gap-10 lg:gap-28 m-auto'>
+        <div className='flex flex-col max-w-5xl md:flex-row flex-wrap gap-10 lg:gap-28 m-auto mt-[-120px]'>
         {products.map((product) => (
             <div key={product.id} className='border shadow-md rounded-xl'>
                 <Image src={product.image} alt={product.name}  />

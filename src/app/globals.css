@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.backgroundFooter {
+  background-image: url('/assets/background-footer.png');
+  background-repeat: no-repeat;
+}
+.backGroundBanner {
+  background-image: url('/assets/main-background.jpg');
+  background-repeat: no-repeat;
+}
+.backgroundProducts {
+  background-image: url('/assets/background-products.png');
+  background-repeat: no-repeat;
+}
+
+
+.backgroundCategory {
+  background-image: url('/assets/background-category.png');
+  background-repeat: no-repeat;
+}

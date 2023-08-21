@@ -8,7 +8,6 @@ function Products() {
 
   useEffect(() => {
     const getAllProducts = getProducts();
-    console.log(getAllProducts)
     setProducts(getAllProducts)
   }, [])
 
