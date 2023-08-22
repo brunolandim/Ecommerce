@@ -15,14 +15,14 @@ function MobileHeader() {
         </label>
         <ul
           tabIndex={0}
-          className="menu right-0 gap-5 p-4 menu-lg dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box w-52"
+          className="menu right-0 text-white font-bold bg-nwBlue-500 gap-5 p-4 menu-lg dropdown-content mt-3 z-[1] shadow rounded-box w-52"
         >
           <Link href="#">Home</Link>
           <Link href="#">Empresa</Link>
           <Link href="#">Sobre</Link>
           <Link href="#">Localização</Link>
           <Link
-            className="font-bold bg-nwYellow-600 text-nwBlue-500 p-2 px-10 rounded-xl"
+            className="font-bold text-center bg-nwYellow-600 text-nwBlue-500 p-2  rounded-xl"
             href="#"
           >
             Contato
