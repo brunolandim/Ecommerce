@@ -5,8 +5,8 @@ import JsStore from '@/app/assets/JSantosStore.png'
 function About() {
   return (
     <div>
-        <h1 className='w-full text-center pt-16 font-bold text-lg text-nwBlue-500'>SUA MELHOR OPÇÃO</h1>
-        <div className='flex flex-col xl:flex-row'>
+        <h1 id='location' className='w-full text-center pt-16 font-bold text-lg text-nwBlue-500'>SUA MELHOR OPÇÃO</h1>
+        <div  className='flex flex-col xl:flex-row'>
             <Image src={JsStore} alt='Loja JS' />
             <div className='flex flex-col mx-4 xl:max-w-xs my-auto md:ml-6 gap-8'>
                 <p>Desde 1970 somos especializados em materiais elétricos, 

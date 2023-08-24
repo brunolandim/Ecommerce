@@ -5,7 +5,7 @@ import womanThing from '@/app/assets/womanthing.png'
 function Contact() {
   return (
     <div className='mt-20 backgroundFooter '>
-        <div className='relative h-[381px] flex  md:flex-row w-full m-auto justify-center gap-8 max-w-6xl '>
+        <div id='about' className='relative h-[381px] flex  md:flex-row w-full m-auto justify-center gap-8 max-w-6xl '>
             <Image className='md:absolute bottom-0 left-0 md:left-[120px]' src={womanThing} alt='Loja JS'/>
             <div className='flex flex-col'>
                 <div className='h-full'/>
