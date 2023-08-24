@@ -12,7 +12,7 @@ function CardProducts({products}: IProps) {
         <div className='backgroundProducts h-[456px] mt-10 lg:ml-10'>
         <h1 className='text-center mt-72 text-white font-bold text-lg'>PRODUTOS EM DESTAQUE</h1>
         </div>
-        <div className='flex flex-col max-w-5xl md:flex-row flex-wrap gap-10 lg:gap-28 m-auto mt-[-120px]'>
+        <div className='flex flex-col max-w-6xl md:flex-row flex-wrap gap-10 lg:gap-4 m-auto mt-[-120px]'>
         {products.map((product) => (
             <div key={product.id} className='border shadow-md rounded-xl'>
                 <Image src={product.image} alt={product.name}  />

@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
-import HeroImage from '@/app/public/heroImage.png'
+import HeroImage from '@/app/assets/heroImage.png'
 
 function Hero() {
   return (
     <div className=' bg-nwBlue-500 backGroundBanner '>
-      <div className='flex flex-row justify-between md:max-w-5xl m-auto'>
+      <div className='flex flex-row justify-between md:max-w-6xl m-auto'>
         <div className='flex flex-col py-8 md:py-0 gap-10 text-white m-auto'>
           <h1 className='font-extrabold text-5xl max-w-md m-auto md:m-0'>ILUMINE SEU DIA A DIA!</h1>
           <p className=' max-w-md m-auto md:m-0'>

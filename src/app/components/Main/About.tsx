@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import JsStore from '@/app/public/JSantosStore.png'
+import JsStore from '@/app/assets/JSantosStore.png'
 
 function About() {
   return (

@@ -4,13 +4,13 @@ import Instagram from './Instagram'
 import FaceBook from './FaceBook'
 import WhiteLogo from './WhiteLogo'
 import Image from 'next/image'
-import LineFooter from '@/app/public/lineFooter.png'
+import LineFooter from '@/app/assets/lineFooter.png'
 import IconNoweb from './IconNoweb'
 
 function Footer() {
   return (
     <div className=' bg-nwBlue-500 text-white'>
-      <div className=' flex flex-row max-w-5xl m-auto justify-between h-60 pt-10'>
+      <div className=' flex flex-row max-w-6xl m-auto justify-between h-60 pt-10'>
           <div className='flex flex-col'>
               <WhiteLogo />
               <h1 className='text-left'>Venha na Elétrica J. Santos e garanta a melhor opção para sua casa!</h1>
@@ -24,7 +24,7 @@ function Footer() {
               </div>
           </div>
       </div>
-      <div className='flex flex-col max-w-5xl m-auto'>
+      <div className='flex flex-col max-w-6xl m-auto'>
         <Image src={LineFooter} alt='yellow line' width={1920} height={200} />
         <div className='flex flex-row justify-between w-full'>
           <p>© Copyright 2021 - Elétrica J. Santos - Todos os Direitos Reservados</p>
