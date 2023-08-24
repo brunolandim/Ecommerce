@@ -1,11 +1,11 @@
-import lampada from '@/app/public/category/lampada.png'
-import ferramenta from '@/app/public/category/ferramenta.png'
-import fios from '@/app/public/category/fios.png'
-import flor from '@/app/public/category/flor.png'
-import luminaria from '@/app/public/category/luminaria.png'
-import lustre from '@/app/public/category/lustres.png'
-import panela from '@/app/public/category/panela.png'
-import ChuveiroQuadrado from '@/app/public/category/chuveiro2.png'
+import lampada from '@/app/assets/category/lampada.png'
+import ferramenta from '@/app/assets/category/ferramenta.png'
+import fios from '@/app/assets/category/fios.png'
+import flor from '@/app/assets/category/flor.png'
+import luminaria from '@/app/assets/category/luminaria.png'
+import lustre from '@/app/assets/category/lustres.png'
+import panela from '@/app/assets/category/panela.png'
+import ChuveiroQuadrado from '@/app/assets/category/chuveiro2.png'
 
 export const getAllCategories = () => {
     return [
